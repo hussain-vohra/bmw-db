@@ -11,14 +11,14 @@ img {
 
 .section-img {
     width: 30%;
-    bottom: -228px;
+    bottom: 128px;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0px);
 }
 
 #scrollable-section {
-    height: 80vh !important;
+    height: 130vh !important;
 }
 
 .section-text {
@@ -30,6 +30,10 @@ img {
 .section-text h3 {
     font-size: 50px;
     font-weight: 400;
+}
+
+.sticky {
+    position: sticky;
 }
 
 @media screen and (max-width: 767px) {
@@ -55,10 +59,7 @@ img {
 
     .section-img {
         width: 50%;
-        bottom: -162px;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0px);
+        bottom: -100px;
     }
     
 }

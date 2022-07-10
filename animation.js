@@ -1,10 +1,11 @@
 gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.create({
-  trigger: "#scrollable-section", // class to start the scroll
+  trigger: ".bws_content", // class to start the scroll
   start: "top 20%", // Scroll start position
   end: "bottom 550px", // Scroll end position
-  pin: "#scrollable-section", // pins the section
+  pin: ".bws_content", // pins the section
+  // pinSpacing: false,
   markers: {
     startColor: "black",
     endColor: "black",
@@ -14,14 +15,16 @@ ScrollTrigger.create({
   },
 });
 
+// gsap.set(".section-img", { className: "sticky" });
+
 gsap.from(".section-text", {
-  y: 850,
+  y: 750,
   ease: "none",
   scrollTrigger: {
     trigger: "#scrollable-section",
-    start: "-15% 20%",
-    end: "bottom 650px",
-    scrub: 1,
+    start: "-20% 20%",
+    end: "bottom 550px",
+    scrub: 1.5,
     markers: {
       startColor: "black",
       endColor: "black",
